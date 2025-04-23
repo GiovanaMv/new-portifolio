@@ -7,7 +7,7 @@ const NavLink = styled(RouterNavLink)`
   text-decoration: none;
   padding: 8px 16px;
   &.active {
-    border-bottom: 2px solid yellow;
+    border-bottom: 1px solid yellow;
   }
 `;
 
@@ -34,8 +34,8 @@ export const NavLinks = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  margin-left: 150px;
-  border-bottom: 2px solid #fdffe8;
+  margin-left: 110px;
+  border-bottom: 1px solid #fdffe8;
 
   a {
     color: rgb(225, 255, 156); 
@@ -46,31 +46,6 @@ export const NavItem = styled.li`
     }
   }
 `;
-
-// export const NavLink = styled.a`
-//   text-decoration: none;
-//   color: #fdffe8;
-//   font-size: 1.2rem;
-//   transition: color 0.3s ease;
-
-//   &:hover {
-//     color: #3216af;
-//   }
-// `;
-
-// const ThemeButton = styled.button`
-//   background: transparent;
-//   border: none;
-//   cursor: pointer;
-//   color: #fdffe8;
-//   font-size: 1.5rem;
-//   transition: color 0.3s ease;
-
-//   &:hover {
-//     color: #3216af;
-//   }
-// `;
-
 
 export function NavBar() {
   return (
