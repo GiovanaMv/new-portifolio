@@ -1,25 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import GlobalStyle from "./styles/GlobalStyle";
+import { Header } from "./components/Header";
+import { NavBar } from "./components/NavBar";
+import { Footer } from "./components/Footer";
+
+import { AboutSection } from "./components/AboutSection";
+import { EducationSection } from "./components/EducationSection";
+import { SitesSection } from "./components/SitesSection";
+import { GamesSection } from "./components/GamesSection";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { EcommerceSection } from "./components/EcommerceSection";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <GlobalStyle />
+      <Header />
+      <NavBar />
+
+      <Routes>
+        <Route path="/" element={<AboutSection />} />
+        <Route path="/education" element={<EducationSection />} />
+        <Route path="/Sites" element={<SitesSection />} />
+        <Route path="/ecommerce" element={<EcommerceSection />} />
+        <Route path="/games" element={<GamesSection />} />
+      </Routes>
+
+      <Footer />
+    </Router>
   );
 }
 
