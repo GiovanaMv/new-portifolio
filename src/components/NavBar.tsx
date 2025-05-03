@@ -1,6 +1,5 @@
 import { NavLink as RouterNavLink } from 'react-router-dom';
 import styled from "styled-components";
-// import { BsMoonStars } from "react-icons/bs";
 
 const NavLink = styled(RouterNavLink)`
   color: #fff;
@@ -16,6 +15,8 @@ const Container = styled.nav`
   justify-content: space-between;
   align-items: center;
   background-image: linear-gradient(180deg, #977DFF,rgb(170, 151, 248), #fcffe6);
+
+  
 `;
 
 export const Navbar = styled.nav`
@@ -40,10 +41,6 @@ export const NavItem = styled.li`
   a {
     color: rgb(225, 255, 156); 
     font-weight: bold;
-
-    &:hover{
-      color:rgb(122, 255, 140);
-    }
   }
 `;
 

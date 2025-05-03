@@ -7,15 +7,13 @@ import jogo3 from '../assets/images/joguinho3.gif';
 
 const Section = styled.section`
   display: block;  
-  margin: 32px;
 `;
 const GroupIcon = styled.ul`
   display: flex;
   list-style: none;
-  width:100%;
+  width: 100%;
   margin-top: 53px;
   justify-content: center;
-  gap: 32px;
   align-items: flex-start;
   
 `;
@@ -24,12 +22,10 @@ const IconItem = styled.li`
   border-radius: 10px;
   align-items: center;
   width: 180px; 
-  // filter: drop-shadow(0 4px 6px rgba(83, 83, 83, 0.2));
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   img{
     width: 100%;
     margin-bottom: 13px;
-    // filter: drop-shadow(0 4px 6px rgba(54, 54, 54, 0.67));
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     &:hover{
       transform: translateY(-9px);
@@ -44,7 +40,7 @@ const IconItem = styled.li`
 const TextCard = styled.li`
   list-style: none;
   max-width: 900px;
-  margin-left: 20%;
+  margin-left: 18%;
   text-align: center;
   margin-top: 30px;
   h3 {

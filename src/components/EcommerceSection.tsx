@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import crocheImg from '../assets/images/croche2.png';
+import Croche from '../assets/images/croche.png';
 import espagueteImg from '../assets/images/restaurante.png';
 import sofa from '../assets/images/sofá.png';
 import vasinhos from '../assets/images/vasinhos.png';
@@ -9,7 +9,7 @@ import bagImg from '../assets/images/bag.png';
 const Section = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 20px;
+  margin-top: 12px;
 `;
 const GroupIcon = styled.ul`
   display: grid;
@@ -31,7 +31,6 @@ const IconItem = styled.li`
   img{
     width: 100%;
     border-radius: 10px;
-    margin-bottom: 6px;
   }
   &:hover{
     transform: translateY(-3px);
@@ -39,27 +38,28 @@ const IconItem = styled.li`
   }
   a{
     text-decoration: none;
-    color:rgb(238, 217, 30);
+    color:rgb(83, 139, 202);
     font-weight: bold;
-    line-height: 1;
-    
+    font-size: 14px;
   }
 `;
 const TextCard = styled.li`
   list-style: none;
   max-width: 362px;
-  margin-left: 24%;
+  margin-left: 26%;
   text-align: center;
   margin-top: 30px;
   h3 {
     margin-bottom: 24px;
-    color:rgb(238, 217, 30);
+    color:rgb(83, 139, 202);
+    
   }
 
   .description {
     color: #555;
     max-width: 500px;
     text-align: justify;
+    
   }
 `;
 
@@ -78,7 +78,7 @@ export function EcommerceSection() {
           <a href="https://boot-restaurant.vercel.app/" target="blank"><img src={espagueteImg} alt="Logo de prato de espaguete para Restaurante" />Restaurante</a>              
         </IconItem>
         <IconItem>
-          <a href="https://loja-virtual-taupe.vercel.app/" target="blank"><img src={crocheImg} alt="Logo de Lã para Site de Linha e Croche" />Lana Colorata</a>              
+          <a href="https://loja-virtual-taupe.vercel.app/" target="blank"><img src={Croche} alt="Logo de Lã para Site de Linha e Croche" />Lana Colorata</a>              
         </IconItem>
         <IconItem>
           <a href="#"><img src={sofa} alt="Imagem de cadeira para loja de Móveis" />Loja Móveis</a>              

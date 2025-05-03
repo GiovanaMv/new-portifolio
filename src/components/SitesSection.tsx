@@ -4,25 +4,25 @@ import logoImg from '../assets/images/logo.png';
 const Section = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 16px;
+  margin-top: 33px;
 `;
 const GroupIcon = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
-  gap: 24px;
+  gap: 16px;
   margin-left: 132px;
 `;
 const IconItem = styled.li`
   background-color: rgb(255, 255, 255);
   padding: 10px;
+  width: 120px;
   text-align: center;
   border-radius: 10px;
-  // border: 1px solid black;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   img{
-    width: 75%;
+    width: 100%;
     border-radius: 10px;
     margin-bottom: 6px;
   }
@@ -35,6 +35,7 @@ const IconItem = styled.li`
     color:rgb(83, 139, 202);
     font-weight: bold;
     line-height: 1;
+    font-size: 14px;
   }
 `;
 const TextCard = styled.li`
@@ -67,7 +68,7 @@ export function SitesSection() {
           <a href="https://site-signos-bootstrap.vercel.app/" target="blank"><img src="https://i.pinimg.com/originals/df/0e/9a/df0e9a1b5aef3f929291e9ac47025ecf.gif" alt="Site exemplar informativo sobre Signos" />Signos</a>              
         </IconItem>
         <IconItem>
-          <a href="https://github.com/GiovanaMv/clone_disneyplus.git"><img src="https://i.pinimg.com/736x/ba/39/b0/ba39b091b81d5acabf86f4dbd4fe45ad.jpg" alt="Clone DisneyPlus" />Disney+(repositório GitHub)</a>              
+          <a href="https://github.com/GiovanaMv/clone_disneyplus.git"><img src="https://i.pinimg.com/736x/ba/39/b0/ba39b091b81d5acabf86f4dbd4fe45ad.jpg" alt="Clone DisneyPlus" />Disney+</a>              
         </IconItem>
         <IconItem>
           <a href="https://sorteador-grunt-five-omega.vercel.app/" target="blank"><img src="https://i.pinimg.com/originals/df/5e/a4/df5ea4085a438be37674bbd8aa6c8a3d.gif" alt="Site Sorteio" />Sorteio</a>              

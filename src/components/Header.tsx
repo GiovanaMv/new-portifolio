@@ -5,7 +5,7 @@ const Container = styled.header`
   color: white;
   padding-top: 15px;
   text-align: center;
-  color:rgb(122, 255, 140); 
+  color: rgb(225, 255, 156);
 `;
 
 export function Header() {
