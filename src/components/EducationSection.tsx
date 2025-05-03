@@ -7,43 +7,67 @@ import Game from '../assets/images/game.png';
 
 const Section = styled.section`
   display: flex;
-  padding: 9px;
-  gap: 112px;
-  margin-top: 12px;
+  margin-top: 6px;
+  gap: 89px;
+
+  .block-skills{
+    li{
+      display:flex;
+    }
+  }
+
+  ul{
+    padding-left: 24px;  
+  li{
+      list-style: none;
+    }
+  }
   h2{
     color: royalblue;
-    }
+    font-size: 24px;
+  }
+  h3{ 
+    font-size: 20px;  
+  }
+  h5{
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
   h3, h5{
     color:rgb(191, 0, 216);
-    
   }
   h4{
-    font-size: 1.1rem;
+    font-size: 14px;
     color:rgb(110, 108, 90);
   }
 
   .left-column{
-    max-width: 500px;
-    margin-left: 112px;
-    li{
-      margin: 8px;
-    }
+    max-width: 350px;
+    margin-left: 174px;
   }
+
+
   .right-column {
     flex: 1;
     display: flex;
     flex-direction: column;
-    max-width: 662px;
+    max-width: 550px;
+
     .block {
       h2 {
-        margin-bottom: 0.5rem;
-        margin-left: 30px;
+        font-size: 24px;
       }
       ul {
       display: flex;
+      padding-left: 0px;
+      margin-bottom: 0px;
       li {
-        margin-left: 32px;
+        margin-left: 12px;
+        text-align: inherit;
+        list-style: none;
+        font-size: 0.9rem;
       }
+      
     }
     }
     .block-education{
@@ -51,16 +75,14 @@ const Section = styled.section`
         list-style: none;
         display: flex;
         gap: 16px;
-      }
-      h2 {
-        margin-bottom: 0.5rem;
-        margin-left: 30px;
+        
       }
       li{
         padding: 6px;
+        position: static;
         border-radius: 10px;
         text-align: center;
-        max-width: 132px;
+        max-width: 130px;
         // border: 2px solid  rgba(54, 54, 54, 0.45);
         box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         transition: transform 0.2s ease, box-shadow 0.2s ease; 
@@ -70,7 +92,8 @@ const Section = styled.section`
         }
       }
       img{
-        width: 100px;
+        width: 90px;
+        margin-bottom: 12px;
       }
     }
 `;
@@ -102,6 +125,7 @@ export function EducationSection() {
             </li>
           </ul>
         </div>
+        
         <div className= "right-column">
           <div className="block experience">
             <h2><i className="bi bi-stars m-2"></i>Formação</h2>

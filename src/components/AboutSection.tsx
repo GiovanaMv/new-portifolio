@@ -2,9 +2,9 @@ import styled from "styled-components";
 import MeImg from '../assets/images/me.png';
 
 const Section = styled.section`
-  padding: 22px;
+  padding: 16px;
   display: flex;
-  gap: 172px;
+  gap: 100px;
   
   .info{
     width: 500px;
@@ -47,7 +47,7 @@ const Section = styled.section`
 
 const Card = styled.div`
   display: block;
-  margin-left: 238px;
+  margin-left: 15%;
   background: #eee;
   padding: 10px;
   border-radius: 12px;
