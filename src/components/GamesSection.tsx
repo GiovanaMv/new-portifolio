@@ -16,6 +16,13 @@ const GroupIcon = styled.ul`
   justify-content: center;
   align-items: flex-start;
   
+  @media (max-width: 768px){
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    text-align: center;
+    margin-top: 24px;
+    width: 100%
+  }
 `;
 const IconItem = styled.li`
   padding: 10px;
@@ -23,6 +30,7 @@ const IconItem = styled.li`
   align-items: center;
   width: 180px; 
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
   img{
     width: 100%;
     margin-bottom: 13px;
@@ -36,6 +44,20 @@ const IconItem = styled.li`
     font-weight: bold;
     text-decoration: none;
     }
+  
+  @media (max-width: 768px){
+    width: 100px;
+    padding: 0px;
+    margin: 12px 0px 12px;
+    img{
+      width: 100%;
+      margin-bottom: 0px;
+      }
+    a {
+      font-size: 8px;
+      }
+    }
+  }
 `;
 const TextCard = styled.li`
   list-style: none;
@@ -43,6 +65,7 @@ const TextCard = styled.li`
   margin-left: 18%;
   text-align: center;
   margin-top: 30px;
+
   h3 {
     margin-bottom: 24px;
     color:rgb(255, 123, 248);
@@ -51,6 +74,24 @@ const TextCard = styled.li`
   .description {
     color: #555;
     text-align: justify;
+  }
+
+    @media (max-width: 768px){
+    width: 302px;
+    margin-left: 8%;
+    margin-top: 12px;
+    padding-left: 0px;
+    
+    h3 {
+      font-size: 16px;
+      margin-bottom: 12px 0px 12px;
+      font-weight: bold;
+    }
+    
+    .description {
+      font-size: 12px;
+      margin-top: 18px;
+    }
   }
 `;
 

@@ -9,13 +9,11 @@ const Section = styled.section`
   display: flex;
   margin-top: 6px;
   gap: 89px;
-
   .block-skills{
     li{
       display:flex;
     }
   }
-
   ul{
     padding-left: 24px;  
   li{
@@ -27,7 +25,7 @@ const Section = styled.section`
     font-size: 24px;
   }
   h3{ 
-    font-size: 20px;  
+    font-size: 18px;  
   }
   h5{
     font-size: 18px;
@@ -44,6 +42,10 @@ const Section = styled.section`
   .left-column{
     max-width: 350px;
     margin-left: 174px;
+
+    p{
+      font-size: 14px;
+    }
   }
 
 
@@ -80,19 +82,21 @@ const Section = styled.section`
       li{
         padding: 6px;
         position: static;
+        font-size: 13px;
+        display: block;
         border-radius: 10px;
         text-align: center;
         max-width: 130px;
-        // border: 2px solid  rgba(54, 54, 54, 0.45);
         box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         transition: transform 0.2s ease, box-shadow 0.2s ease; 
+        
         &:hover{
           transform: translateY(-3px);
           box-shadow: 0 8px 16px rgba(0,0,0,0.3);
         }
       }
       img{
-        width: 90px;
+        width: 80px;
         margin-bottom: 12px;
       }
     }
@@ -139,10 +143,10 @@ export function EducationSection() {
         <div className="block-education">
           <h2><i className="bi bi-stars m-2"></i>Hobbies</h2>
             <ul >
-              <li><img src={Pintura} alt="Flor decorativa" />Pintura/Desenho em telas</li>
+              <li><img src={Pintura} alt="Flor decorativa" />Pinturas em telas</li>
               <li><img src={Croche} alt="Flor decorativa" />Croche</li>
               <li><img src={Costura} alt="Flor decorativa" />Costurar</li>
-              <li><img src={Game} alt="Flor decorativa" />Criar Jogos digitais</li>
+              <li><img src={Game} alt="Flor decorativa" />   Jogos digitais</li>
             </ul>
           </div>
         <div className="block skills">

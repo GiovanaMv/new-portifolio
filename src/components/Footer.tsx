@@ -25,6 +25,21 @@ const Rodape = styled.footer`
     text-decoration: none;   
     color: inherit;  
 }
+    @media (max-width: 768px){
+      padding: 6px;
+      margin-top: 0px;
+      width: 100%;
+
+      .links {
+        justify-content: normal;
+        margin-left: 8%;
+        gap: 90px;
+      }
+
+      .links-contact i {
+        font-size: 16px;        
+}
+    }
 `;
 
 export function Footer() {

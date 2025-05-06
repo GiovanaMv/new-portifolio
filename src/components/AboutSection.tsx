@@ -2,25 +2,24 @@ import styled from "styled-components";
 import MeImg from '../assets/images/me.png';
 
 const Section = styled.section`
-  padding: 16px;
   display: flex;
   gap: 100px;
   
   .info{
-    width: 500px;
+    width: 600px;
 
     h1{
-        margin: 0px 0 20px;
+        margin: 20px 0 20px;
         font-size: 2rem;
         color: #0e00d8;
     }
     h2{
-        margin: 0 0 15px;
+        margin: 0 0 12px;
         font-size: 1.5rem;
-        color: #6c56c4;     
+        color: #6c56c4; 
     }
     h3{
-        margin: 10px 0 25px;
+        margin: 25px 0 10px;
         font-size: 1rem;
         font-weight: bold;
         color: #0e00d8; 
@@ -31,25 +30,62 @@ const Section = styled.section`
         text-align: justify;
     }
     ul {
-        padding-left: 20px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-content: center;
+        padding: 0px;
+        gap: 12px;
+        display: flex;
         list-style: none;
-        
     }
     li {
         margin-bottom: 8px;
-        color: #6c56c4;  
+        color: #6c56c4; 
     }    
+  }
+    @media (max-width: 768px){
+    display: block;
+    margin-top: 4px;
+
+    .info {
+      width: 300px;
+      margin-left: 9%;
+
+      h1 {
+        margin: 24px 0 12px;
+        font-size: 18px;
+        text-align: center;
+      }
+      h2 {
+        margin: 0px 0px 12px;
+        font-size: 14px;
+        text-align: center;
+      }
+      h3 {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 0px;
+      }
+      p {
+        font-size: 14px;
+        margin: 10 0 10px;
+      }
+      ul {
+        gap: 32px;
+        margin-left: 12px;
+        margin-top: 8px;
+    }
+      li {
+        margin: 0px;
+        font-size: 12px;
+      }
+    }
   }
 `;
 
 const Card = styled.div`
   display: block;
-  margin-left: 15%;
+  margin: 8px 0 10px;
+  margin-left: 12%;
   background: #eee;
-  padding: 10px;
+  padding: 3px;
   border-radius: 12px;
   width: 300px;
   text-align: center;
@@ -63,7 +99,8 @@ const Card = styled.div`
     box-shadow: 0 8px 16px rgba(0,0,0,0.3);
     }
   img {
-        width: 100%;
+        width: 90%;
+        margin-left: 12px;
         height: auto;
         display: block;
         border-radius: 12px;
@@ -76,6 +113,27 @@ const Card = styled.div`
     margin: 0;
     color: #000000;
     }
+
+    @media (max-width: 768px){
+    display: flex;
+    margin-left: 32px;
+    padding: 0;
+    width: 80%;
+    height: auto;
+
+    img {
+      margin-left: 0px;
+      width: 120px;
+      height: 120px;
+    }
+    h3{
+      margin: 10px;
+      font-size: 12px;        
+    }
+    p {
+      font-size: 12px;
+    }
+  }
 `;
 
 export function AboutSection() {
@@ -84,9 +142,9 @@ export function AboutSection() {
       <Card>
         <img src={MeImg} alt="Flor decorativa" />              
       <div>
-          <h3>Olá sou a Giovana</h3>
+          <h3>Olá sou Giovana</h3>
           <p>Dev Web, Games, e artista 🚀 . </p>
-        </div>
+      </div>
       </Card>
         <div className="info">
           <h1>Estágio/Desenvolvedora Front-End</h1>
@@ -96,9 +154,9 @@ export function AboutSection() {
             </p>
             <h3>Contatos</h3>
               <ul >
-                <li className="info-p"><i className="bi bi-envelope m-2"></i><a href="https://github.com/GiovanaMv">maiagiovana644@gmail.com</a></li>
-                <li className="info-p"><i className="bi bi-github m-2"></i><a href="https://github.com/GiovanaMv">Meu Github</a></li>
-                <li className="info-p"><i className="bi bi-linkedin m-2"></i><a href="https://www.linkedin.com/in/giovana-maia1212/">Meu LinkedIn</a></li>
+                <li className="info-p"><i className="bi bi-envelope m-2"></i><a href="mailto:maiagiovana644@gmail.com">Gmail</a></li>
+                <li className="info-p"><i className="bi bi-github m-2"></i><a href="https://github.com/GiovanaMv">Github</a></li>
+                <li className="info-p"><i className="bi bi-linkedin m-2"></i><a href="https://www.linkedin.com/in/giovana-maia1212/">LinkedIn</a></li>
               </ul>
           </div>
     </Section>

@@ -5,6 +5,11 @@ const Section = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 33px;
+
+  @media (max-width: 768px){
+      display: block;
+      margin-top: 24px;
+    }
 `;
 const GroupIcon = styled.ul`
   display: grid;
@@ -12,6 +17,14 @@ const GroupIcon = styled.ul`
   list-style: none;
   gap: 16px;
   margin-left: 132px;
+
+  @media (max-width: 768px){
+    margin-left: 4%;
+    padding-left: 13px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 2;
+  }
 `;
 const IconItem = styled.li`
   background-color: rgb(255, 255, 255);
@@ -21,6 +34,7 @@ const IconItem = styled.li`
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+
   img{
     width: 100%;
     border-radius: 10px;
@@ -36,6 +50,22 @@ const IconItem = styled.li`
     font-weight: bold;
     line-height: 1;
     font-size: 14px;
+  }
+
+    @media (max-width: 768px){
+    width: 90%;
+    padding: 12px;
+    margin-left: 0px;
+    max-height: 100px;
+    margin-bottom: 8px;
+
+    img {
+    margin-bottom: 0px;
+    }
+    a {
+      font-size: 9px;
+      line-height: 0px;
+    }
   }
 `;
 const TextCard = styled.li`
@@ -53,6 +83,21 @@ const TextCard = styled.li`
     color: #555;
     max-width: 500px;
     text-align: justify;
+  }
+
+  @media (max-width: 768px){
+    max-width: 302px;
+    margin-left: 10%;
+    margin-top: 32px;
+
+    h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+    .description {
+    font-size: 12px;
+    margin-bottom: 34.5%;
   }
 `;
 

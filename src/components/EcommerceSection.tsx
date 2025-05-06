@@ -10,13 +10,27 @@ const Section = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 12px;
+
+  @media (max-width: 768px){
+    display: block;
+    margin-top: 12px;
+    margin-left: 12px;
+    }
 `;
 const GroupIcon = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
   gap: 24px;
-  width:70%;
+  width: 70%;
+
+  @media (max-width: 768px){
+    gap: 24px;
+    display: grid;
+    grid-template-columns: 78px 78px 78px;
+    padding-left: 28px;
+    margin-bottom: 34.5%;
+  }
 `;
 const IconItem = styled.li`
   padding: 10px;
@@ -25,9 +39,9 @@ const IconItem = styled.li`
   background-color: rgb(255, 255, 255);
   text-align: center;
   border-radius: 10px;
-  // border: 1px solid black;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
   img{
     width: 100%;
     border-radius: 10px;
@@ -42,6 +56,16 @@ const IconItem = styled.li`
     font-weight: bold;
     font-size: 14px;
   }
+
+    @media (max-width: 768px){
+      padding: 6px;
+      a {
+        font-size: 9px;
+      }
+      img {
+        width: 100%;
+      }
+    }
 `;
 const TextCard = styled.li`
   list-style: none;
@@ -49,10 +73,10 @@ const TextCard = styled.li`
   margin-left: 26%;
   text-align: center;
   margin-top: 30px;
+  
   h3 {
     margin-bottom: 24px;
     color:rgb(83, 139, 202);
-    
   }
 
   .description {
@@ -60,6 +84,22 @@ const TextCard = styled.li`
     max-width: 500px;
     text-align: justify;
     
+  }
+
+  @media (max-width: 768px){
+    max-width: 302px;
+    margin-left: 5%;
+    margin-top: 8px;
+    margin-bottom: 24px;
+
+    h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+    .description {
+    font-size: 12px;
+  }
   }
 `;
 
