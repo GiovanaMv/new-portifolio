@@ -20,8 +20,11 @@ const GroupIcon = styled.ul`
     display: grid;
     grid-template-columns: 100px 100px 100px;
     text-align: center;
-    margin-top: 24px;
-    width: 100%
+    width: 100%;
+    margin: 0px 0px 44px;
+    margin-left: 12px;
+    justify-content: normal;
+    padding: 0;
   }
 `;
 const IconItem = styled.li`
@@ -77,10 +80,9 @@ const TextCard = styled.li`
   }
 
     @media (max-width: 768px){
-    width: 302px;
-    margin-left: 8%;
-    margin-top: 12px;
-    padding-left: 0px;
+    width: 280px;
+    margin-left: 6%;
+    margin-top: 24px;
     
     h3 {
       font-size: 16px;
@@ -90,7 +92,8 @@ const TextCard = styled.li`
     
     .description {
       font-size: 12px;
-      margin-top: 18px;
+      margin-top: 24px;
+      margin-bottom: 24px;
     }
   }
 `;

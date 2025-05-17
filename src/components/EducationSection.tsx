@@ -9,6 +9,11 @@ const Section = styled.section`
   display: flex;
   margin-top: 6px;
   gap: 89px;
+
+  @media (max-width: 768px){
+      display: block;
+    }
+
   .block-skills{
     li{
       display:flex;
@@ -46,9 +51,26 @@ const Section = styled.section`
     p{
       font-size: 14px;
     }
+
+    @media (max-width: 768px){
+      margin-left: 0px;
+      max-width: 320px;
+
+      h2{
+        margin: 4px 0px 12px;
+        font-size: 18px;
+      }
+      h3{ 
+        font-size: 16px;  
+      }
+      ul{
+        padding-left: 34px;  
+      li{
+          list-style: none;
+        }
+      }
+    }
   }
-
-
   .right-column {
     flex: 1;
     display: flex;
@@ -68,16 +90,38 @@ const Section = styled.section`
         text-align: inherit;
         list-style: none;
         font-size: 0.9rem;
+        }
       }
-      
     }
+  .block-experience {
+    ul{
+          display: grid;
+          grid-template-columns: 150px 150px 150px 150px;
+        }
+      li {
+        margin-left: 12px;
+      }
+
+    @media (max-width: 768px){
+      max-width: 280px;
+      ul{
+          display: grid;
+          grid-template-columns: 160px 170px;
+          padding-left: 21px;
+        }
+      li {
+        margin-left: 12px;
+      }
+      h2{
+        font-size: 18px;
+      }
     }
+  }
     .block-education{
       ul{
         list-style: none;
         display: flex;
         gap: 16px;
-        
       }
       li{
         padding: 6px;
@@ -89,7 +133,6 @@ const Section = styled.section`
         max-width: 130px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         transition: transform 0.2s ease, box-shadow 0.2s ease; 
-        
         &:hover{
           transform: translateY(-3px);
           box-shadow: 0 8px 16px rgba(0,0,0,0.3);
@@ -99,7 +142,46 @@ const Section = styled.section`
         width: 80px;
         margin-bottom: 12px;
       }
+      @media (max-width: 768px){
+      max-width: 280px;
+      ul{
+          display: flex;
+          gap: 6px;
+        }
+      li {
+        font-size: 9px;
+        padding: 6px;
+      }
+      h2{
+        font-size: 18px;
+      }
+      img{
+        width: 50px;
+      }
     }
+  }
+  .block-skills{
+    ul{
+      display: flex;
+
+      li{
+        font-size: 14px;
+        margin-left: 12px;
+      }
+    }
+    @media (max-width: 768px){
+      
+    ul{
+      display: flex;
+      li{
+        font-size: 9px;
+        margin-left: 6px;
+      }
+    }
+    h2{
+        font-size: 18px;
+      }
+  }
 `;
 
 export function EducationSection() {
@@ -131,7 +213,7 @@ export function EducationSection() {
         </div>
         
         <div className= "right-column">
-          <div className="block experience">
+          <div className="block-experience">
             <h2><i className="bi bi-stars m-2"></i>Formação</h2>
             <ul>
               <li><h5>Engineer Software</h5><h4>Universidade Centro Universitário União das Américas - 2025 | 2028</h4></li>
@@ -149,7 +231,7 @@ export function EducationSection() {
               <li><img src={Game} alt="Flor decorativa" />   Jogos digitais</li>
             </ul>
           </div>
-        <div className="block skills">
+        <div className="block-skills">
           <h2><i className="bi bi-stars m-2"></i>Skills</h2>
             <ul>
               <li> ⚛️REACT</li>

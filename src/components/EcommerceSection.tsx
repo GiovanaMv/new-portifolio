@@ -13,8 +13,7 @@ const Section = styled.section`
 
   @media (max-width: 768px){
     display: block;
-    margin-top: 12px;
-    margin-left: 12px;
+    margin-top: 8px;
     }
 `;
 const GroupIcon = styled.ul`
@@ -28,8 +27,8 @@ const GroupIcon = styled.ul`
     gap: 24px;
     display: grid;
     grid-template-columns: 78px 78px 78px;
-    padding-left: 28px;
-    margin-bottom: 34.5%;
+    padding-left: 21px;
+    margin-bottom: 33px;
   }
 `;
 const IconItem = styled.li`
@@ -87,10 +86,10 @@ const TextCard = styled.li`
   }
 
   @media (max-width: 768px){
-    max-width: 302px;
-    margin-left: 5%;
+    max-width: 280px;
+    margin-left: 6%;
     margin-top: 8px;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
 
     h3 {
     font-size: 16px;

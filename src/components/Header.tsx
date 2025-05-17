@@ -16,6 +16,7 @@ const Container = styled.header`
         margin-bottom: 0px;
         font-weight: bold;
         font-size: 24px;
+        margin-left: 0px;
       }
     }
 `;

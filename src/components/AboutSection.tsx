@@ -42,15 +42,16 @@ const Section = styled.section`
   }
     @media (max-width: 768px){
     display: block;
-    margin-top: 4px;
+    margin-top: 2px;
+    width: 280px;
 
     .info {
-      width: 300px;
-      margin-left: 9%;
+      width: 280px;
+      margin-left: 7%;
 
       h1 {
         margin: 24px 0 12px;
-        font-size: 18px;
+        font-size: 16px;
         text-align: center;
       }
       h2 {
@@ -69,8 +70,8 @@ const Section = styled.section`
       }
       ul {
         gap: 32px;
-        margin-left: 12px;
-        margin-top: 8px;
+        margin-left: 6px;
+        margin-top: 12px;
     }
       li {
         margin: 0px;
@@ -116,9 +117,9 @@ const Card = styled.div`
 
     @media (max-width: 768px){
     display: flex;
-    margin-left: 32px;
-    padding: 0;
-    width: 80%;
+    margin-left: 20px;
+    padding: 0px;
+    width: 100%;
     height: auto;
 
     img {

@@ -8,7 +8,8 @@ const Section = styled.section`
 
   @media (max-width: 768px){
       display: block;
-      margin-top: 24px;
+      margin-top: 18px;
+      
     }
 `;
 const GroupIcon = styled.ul`
@@ -19,11 +20,11 @@ const GroupIcon = styled.ul`
   margin-left: 132px;
 
   @media (max-width: 768px){
-    margin-left: 4%;
-    padding-left: 13px;
+    margin-left: 8px;
+    padding-left: 3px;
     display: grid;
-    grid-template-columns: 100px 100px 100px;
-    gap: 2;
+    grid-template-columns: 90px 90px 90px;
+    
   }
 `;
 const IconItem = styled.li`
@@ -54,10 +55,10 @@ const IconItem = styled.li`
 
     @media (max-width: 768px){
     width: 90%;
-    padding: 12px;
-    margin-left: 0px;
-    max-height: 100px;
-    margin-bottom: 8px;
+    padding: 8px;
+    margin-left: 4px;
+    max-height: 110px;
+    margin-bottom: 0px;
 
     img {
     margin-bottom: 0px;
@@ -86,8 +87,8 @@ const TextCard = styled.li`
   }
 
   @media (max-width: 768px){
-    max-width: 302px;
-    margin-left: 10%;
+    max-width: 280px;
+    margin-left: 23px;
     margin-top: 32px;
 
     h3 {
@@ -97,7 +98,7 @@ const TextCard = styled.li`
   }
     .description {
     font-size: 12px;
-    margin-bottom: 34.5%;
+    margin-bottom: 39px;
   }
 `;
 
