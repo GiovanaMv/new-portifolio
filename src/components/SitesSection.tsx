@@ -98,7 +98,7 @@ const TextCard = styled.li`
   }
     .description {
     font-size: 12px;
-    margin-bottom: 18%;
+    margin-bottom: 12%;
   }
 `;
 

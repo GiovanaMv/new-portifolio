@@ -55,7 +55,7 @@ const IconItem = styled.li`
   @media (max-width: 768px){
     width: 100px;
     padding: 0px;
-    margin: 12px 0px 12px;
+    margin: 12px 12px 12px;
     img{
       width: 100%;
       margin-bottom: 0px;
