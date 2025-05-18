@@ -14,7 +14,7 @@ const Section = styled.section`
 
   @media (max-width: 768px){
     display: block;
-   margin: 32px 25px 24%;
+   margin: 32px 25px 32%;
     margin-top: 16px;
     }
 `;

@@ -67,7 +67,7 @@ const Section = styled.section`
       }
       p {
         font-size: 14px;
-        margin: 12px 0 24px;
+        margin: 18px 0 24px;
       }
       ul {
         gap: 32px;

@@ -26,7 +26,7 @@ const GroupIcon = styled.ul`
     grid-template-columns: 100px 100px 100px;
     text-align: center;
     width: 100%;
-    margin-bottom: 54%;
+    margin-bottom: 42%;
     justify-content: normal;
     padding: 0;
   }
