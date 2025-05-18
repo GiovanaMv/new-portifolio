@@ -99,7 +99,7 @@ const TextCard = styled.li`
   }
     .description {
     font-size: 12px;
-    margin-bottom: 12%;
+    margin-bottom: 10%;
   }
 `;
 
