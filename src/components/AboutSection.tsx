@@ -47,7 +47,8 @@ const Section = styled.section`
 
     .info {
       width: 280px;
-      margin-left: 12%;
+      margin-left: 16%;
+      margin-bottom: 12%;
 
       h1 {
         margin: 19px 0 8px;
@@ -66,7 +67,7 @@ const Section = styled.section`
       }
       p {
         font-size: 14px;
-        margin: 8px 0 12px;
+        margin: 12px 0 24px;
       }
       ul {
         gap: 32px;
@@ -117,10 +118,11 @@ const Card = styled.div`
 
     @media (max-width: 768px){
     display: flex;
-    margin-left: 12%;
+    margin-left: 16%;
     padding: 0px;
     width: 100%;
     height: auto;
+    margin-bottom: 12%;
 
     img {
       margin-left: 0px;
