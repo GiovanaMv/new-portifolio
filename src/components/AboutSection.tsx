@@ -48,7 +48,7 @@ const Section = styled.section`
     .info {
       width: 280px;
       margin-left: 16%;
-      margin-bottom: 12%;
+      margin-bottom: 13%;
 
       h1 {
         margin: 19px 0 8px;
