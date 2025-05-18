@@ -59,7 +59,7 @@ const IconItem = styled.li`
     margin-left: 4px;
     max-height: 110px;
     margin-bottom: 0px;
-    margin-top: 10px;
+    margin-top: 12px;
 
     img {
     margin-bottom: 0px;
@@ -99,7 +99,7 @@ const TextCard = styled.li`
   }
     .description {
     font-size: 12px;
-    margin-bottom: 16%;
+    margin-bottom: 12%;
   }
 `;
 
