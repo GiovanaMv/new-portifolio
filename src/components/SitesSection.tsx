@@ -89,7 +89,7 @@ const TextCard = styled.li`
   @media (max-width: 768px){
     max-width: 280px;
     margin-left: 23px;
-    margin-top: 24%;
+    margin-top: 20%;
 
     h3 {
     font-size: 16px;
@@ -98,7 +98,7 @@ const TextCard = styled.li`
   }
     .description {
     font-size: 12px;
-    margin-bottom: 32%;
+    margin-bottom: 28%;
   }
 `;
 
