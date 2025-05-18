@@ -14,6 +14,7 @@ const GlobalStyle = createGlobalStyle`
     color: #222;
     font-family: 'Arial', sans-serif;
     -webkit-font-smoothing: antialiased;
+    
   }
 
   #root {

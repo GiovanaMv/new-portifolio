@@ -47,15 +47,15 @@ const Section = styled.section`
 
     .info {
       width: 280px;
-      margin-left: 7%;
+      margin-left: 9%;
 
       h1 {
-        margin: 24px 0 12px;
+        margin: 19px 0 8px;
         font-size: 16px;
         text-align: center;
       }
       h2 {
-        margin: 0px 0px 12px;
+        margin: 12px 0px 6px;
         font-size: 14px;
         text-align: center;
       }
@@ -66,12 +66,12 @@ const Section = styled.section`
       }
       p {
         font-size: 14px;
-        margin: 10 0 10px;
+        margin: 8px 0 12px;
       }
       ul {
         gap: 32px;
-        margin-left: 6px;
-        margin-top: 12px;
+        margin-left: 4px;
+        margin-top: 8px;
     }
       li {
         margin: 0px;
@@ -117,7 +117,7 @@ const Card = styled.div`
 
     @media (max-width: 768px){
     display: flex;
-    margin-left: 20px;
+    margin-left: 12%;
     padding: 0px;
     width: 100%;
     height: auto;

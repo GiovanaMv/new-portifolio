@@ -20,7 +20,7 @@ const Section = styled.section`
     }
   }
   ul{
-    padding-left: 24px;  
+    padding-left: 21px;  
   li{
       list-style: none;
     }
@@ -54,14 +54,15 @@ const Section = styled.section`
 
     @media (max-width: 768px){
       margin-left: 0px;
-      max-width: 320px;
+      max-width: 350px;
 
       h2{
         margin: 4px 0px 12px;
         font-size: 18px;
       }
       h3{ 
-        font-size: 16px;  
+        font-size: 16px;
+        margin-top: -8px;  
       }
       ul{
         padding-left: 34px;  
@@ -106,14 +107,20 @@ const Section = styled.section`
       max-width: 280px;
       ul{
           display: grid;
-          grid-template-columns: 160px 170px;
+          grid-template-columns: 150px 150px;
           padding-left: 21px;
         }
       li {
         margin-left: 12px;
+        max-width: 138px;
       }
       h2{
         font-size: 18px;
+      }
+      h5{
+        font-size: 16px;
+        margin: 1px 0px 6px;
+        }
       }
     }
   }
@@ -146,10 +153,11 @@ const Section = styled.section`
       max-width: 280px;
       ul{
           display: flex;
-          gap: 6px;
+          gap: 16px;
+          margin-left: 5px;
         }
       li {
-        font-size: 9px;
+        font-size: 10px;
         padding: 6px;
       }
       h2{
@@ -174,8 +182,8 @@ const Section = styled.section`
     ul{
       display: flex;
       li{
-        font-size: 9px;
-        margin-left: 6px;
+        font-size: 10px;
+        margin-left: 0px;
       }
     }
     h2{
@@ -226,7 +234,7 @@ export function EducationSection() {
           <h2><i className="bi bi-stars m-2"></i>Hobbies</h2>
             <ul >
               <li><img src={Pintura} alt="Flor decorativa" />Pinturas em telas</li>
-              <li><img src={Croche} alt="Flor decorativa" />Croche</li>
+              <li><img src={Croche} alt="Flor decorativa" />Crochê</li>
               <li><img src={Costura} alt="Flor decorativa" />Costurar</li>
               <li><img src={Game} alt="Flor decorativa" />   Jogos digitais</li>
             </ul>

@@ -8,7 +8,7 @@ const Section = styled.section`
 
   @media (max-width: 768px){
       display: block;
-      margin-top: 18px;
+      margin: 32px 13px 4%;
       
     }
 `;
@@ -89,7 +89,7 @@ const TextCard = styled.li`
   @media (max-width: 768px){
     max-width: 280px;
     margin-left: 23px;
-    margin-top: 32px;
+    margin-top: 48px;
 
     h3 {
     font-size: 16px;

@@ -11,9 +11,11 @@ const Section = styled.section`
   grid-template-columns: 1fr 1fr;
   margin-top: 12px;
 
+
   @media (max-width: 768px){
     display: block;
-    margin-top: 8px;
+    margin: 12px;
+    margin-top: 16px;
     }
 `;
 const GroupIcon = styled.ul`
@@ -28,7 +30,8 @@ const GroupIcon = styled.ul`
     display: grid;
     grid-template-columns: 78px 78px 78px;
     padding-left: 21px;
-    margin-bottom: 33px;
+    margin-bottom: 12%;
+    margin-top: 12%;
   }
 `;
 const IconItem = styled.li`
