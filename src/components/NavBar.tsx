@@ -11,7 +11,7 @@ const NavLink = styled(RouterNavLink)`
   }
 
   @media (max-width: 768px){
-    padding: 0px 6px 8px;
+    padding: 0px 8px 8px;
   }
 `;
 

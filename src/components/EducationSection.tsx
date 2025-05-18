@@ -111,7 +111,7 @@ const Section = styled.section`
           padding-left: 21px;
         }
       li {
-        margin-left: 12px;
+        margin-left: 16px;
         max-width: 138px;
       }
       h2{
@@ -154,7 +154,7 @@ const Section = styled.section`
       ul{
           display: flex;
           gap: 16px;
-          margin-left: 5px;
+          margin-left: 12px;
         }
       li {
         font-size: 10px;
@@ -233,10 +233,10 @@ export function EducationSection() {
         <div className="block-education">
           <h2><i className="bi bi-stars m-2"></i>Hobbies</h2>
             <ul >
-              <li><img src={Pintura} alt="Flor decorativa" />Pinturas em telas</li>
-              <li><img src={Croche} alt="Flor decorativa" />Crochê</li>
-              <li><img src={Costura} alt="Flor decorativa" />Costurar</li>
-              <li><img src={Game} alt="Flor decorativa" />   Jogos digitais</li>
+              <li><img src={Pintura} alt="tela de pintura no cavalete" />Pinturas em telas</li>
+              <li><img src={Croche} alt="Rolo de Lã para crochê" />Crochê</li>
+              <li><img src={Costura} alt="Máquina de costura laranja" />Costurar</li>
+              <li><img src={Game} alt="Controle de video game" />   Jogos digitais</li>
             </ul>
           </div>
         <div className="block-skills">

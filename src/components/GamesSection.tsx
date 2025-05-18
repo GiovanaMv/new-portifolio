@@ -6,7 +6,12 @@ import jogo2 from '../assets/images/joguinho2.gif';
 import jogo3 from '../assets/images/joguinho3.gif';
 
 const Section = styled.section`
-  display: block;  
+  display: block; 
+  
+  @media (max-width: 768px){
+    margin-left: 6%;
+    
+  }
 `;
 const GroupIcon = styled.ul`
   display: flex;
@@ -21,8 +26,7 @@ const GroupIcon = styled.ul`
     grid-template-columns: 100px 100px 100px;
     text-align: center;
     width: 100%;
-    margin: 0px 0px 17%;
-    margin-left: 12px;
+    margin-bottom: 34%;
     justify-content: normal;
     padding: 0;
   }
