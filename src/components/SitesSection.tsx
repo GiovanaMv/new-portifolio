@@ -59,7 +59,7 @@ const IconItem = styled.li`
     margin-left: 4px;
     max-height: 110px;
     margin-bottom: 0px;
-    margin-top: 12px;
+    margin-top: 10px;
 
     img {
     margin-bottom: 0px;
