@@ -183,7 +183,7 @@ const Section = styled.section`
       display: flex;
       li{
         font-size: 10px;
-        margin-left: 0px;
+        margin-left: 12px;
       }
     }
     h2{

@@ -42,12 +42,12 @@ const Section = styled.section`
   }
     @media (max-width: 768px){
     display: block;
-    margin-top: 2px;
+    margin-top: 8px;
     width: 280px;
 
     .info {
       width: 280px;
-      margin-left: 9%;
+      margin-left: 12%;
 
       h1 {
         margin: 19px 0 8px;
