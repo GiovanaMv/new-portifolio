@@ -23,7 +23,7 @@ const GroupIcon = styled.ul`
   
   @media (max-width: 768px){
     display: grid;
-    grid-template-columns: 100px 100px 100px;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
     text-align: center;
     width: 100%;
     margin-bottom: 46%;

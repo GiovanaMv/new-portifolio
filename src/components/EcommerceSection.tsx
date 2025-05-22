@@ -8,30 +8,26 @@ import bagImg from '../assets/images/bag.png';
 
 const Section = styled.section`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 12px;
-
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 18px;
 
   @media (max-width: 768px){
     display: block;
-   margin: 32px 25px 33%;
-    margin-top: 16px;
-    }
+    margin: 16px 16px 24px;
+  }
 `;
 const GroupIcon = styled.ul`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
   list-style: none;
   gap: 24px;
-  width: 70%;
+  width: 100%;
+  padding: 12px;
+  margin-left: 182px;
+  justify-items: center;
 
-  @media (max-width: 768px){
-    gap: 24px;
-    display: grid;
-    grid-template-columns: 78px 78px 78px;
-    padding-left: 21px;
-    margin-bottom: 12%;
-    margin-top: 12%;
+  @media (max-width: 768px) {
+    margin: 24px 0;
   }
 `;
 const IconItem = styled.li`
@@ -45,7 +41,7 @@ const IconItem = styled.li`
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   
   img{
-    width: 100%;
+    width: 90%;
     border-radius: 10px;
   }
   &:hover{
